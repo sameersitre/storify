@@ -6,7 +6,7 @@ class Login extends Component {
         return (
             <div>
                <p> Login Into Storify and be mesmarised</p>
-               <div >
+               <div  >
                <Input placeholder="Username"/>
                <Input placeholder="Password"/>
                <Button color="green" variant="contained">Submit</Button>

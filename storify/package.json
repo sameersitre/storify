@@ -7,10 +7,6 @@
     "ajv": "^6.5.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-<<<<<<< HEAD
-    "react-router": "^4.3.1",
-=======
->>>>>>> 54e34be73b6fbe1d6895d7055ef944bcd9c4c448
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4"
   },

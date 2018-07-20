@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {
   Route,
@@ -22,15 +21,11 @@ class App extends Component {
               <li><NavLink to="/">Cart</NavLink></li>
               <li><NavLink to="/Home">Home</NavLink></li>
               <li><NavLink to="/Login">Login</NavLink></li>
-
-              
             </ul>
             <div >
               <Route path="/" component={NavBar} />
-
               <Route path="/Home" component={Home} />
               <Route path="/Login" component={Login} />
-
             </div>
           </div>
         </HashRouter>

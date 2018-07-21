@@ -6,7 +6,7 @@ import {
   HashRouter
 } from "react-router-dom";
 import Home from './_components/Home.js';
-import NavBar from './NavBar.js';
+import NavBar from './_components/NavBar';
 import Login from './_components/Login.js';
 
 import Button from '@material-ui/core/Button';
@@ -17,10 +17,11 @@ class App extends Component {
       <div className="App">
         <HashRouter>
           <div >
-            <ul>
-              <li><NavLink to="/">Cart</NavLink></li>
-              <li><NavLink to="/Home">Home</NavLink></li>
-              <li><NavLink to="/Login">Login</NavLink></li>
+            <ul
+            >
+{          <li><NavLink to="/"></NavLink></li>
+}              <li><NavLink to="/Home"></NavLink></li>
+              <li><NavLink to="/Login"></NavLink></li>
             </ul>
             <div >
               <Route path="/" component={NavBar} />
@@ -29,7 +30,6 @@ class App extends Component {
             </div>
           </div>
         </HashRouter>
-        <Button variant="contained" color="primary"></Button>
       </div>
     );
   }

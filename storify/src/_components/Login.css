@@ -1,0 +1,14 @@
+.input{
+    display: block;
+    text-align: center;
+   
+}
+.loginText{
+    font-family:'Courier New', Courier, monospace;
+    word-spacing: -6px;
+    font-size: 18px;
+    font-weight: 200;
+}
+.inputSpace{
+    margin-top: 20px;
+}

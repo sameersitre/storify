@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Input } from '@material-ui/core/';
 import './Login.css';
+import {Link} from 'react-router-dom';
 
 class Login extends Component {
     render() {
@@ -14,9 +15,14 @@ class Login extends Component {
                     <Input placeholder="Password" className="inputSpace" type="password" />
                 </div>
                 <div className="inputSpace">
-                    <Button color="primary" variant="contained" >Sign In</Button>
+                    <Link to="/Home">
+                        <Button color="primary" variant="contained" >Sign In</Button>
+                    </Link>
                     <br /><br />
-                    <Button color="inherit:green" variant="outlined">New to Storify, Sign Up</Button>
+                    <p className="text-signup">New To Storify</p>
+                    <Link to="/Signup">
+                    <Button color="secondary" variant="outlined">Create Your Storify Account</Button>
+                    </Link>
                 </div>
             </div>
         )

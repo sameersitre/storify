@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Home.css';
-import games from '../_data/StoriesDB.json';
+import Stories from '../_data/StoriesDB.json';
 
 //import Card from './Card'
 import StoryCard from './StoryCard';
@@ -19,7 +19,7 @@ class Home extends Component {
 
                 <div className='hor-slide-container' style={{ padding: '20px 20px 20px 20px' }} >
 
-                    {games.map((game, i) =>
+                    {Stories.map((game, i) =>
                         <StoryCard key={i} products={game} />)}
                 </div>
                 

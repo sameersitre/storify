@@ -11,12 +11,12 @@ class Login extends Component {
                     <Input placeholder="Username" />
                 </div>
                 <div>
-                    <Input placeholder="Password" className="inputSpace"/>
+                    <Input placeholder="Password" className="inputSpace" type="password" />
                 </div>
                 <div className="inputSpace">
                     <Button color="primary" variant="contained" >Sign In</Button>
-                    <br/><br/>
-                    <Button color="secondary" variant="outlined">New to Storify, Sign Up</Button>
+                    <br /><br />
+                    <Button color="inherit:green" variant="outlined">New to Storify, Sign Up</Button>
                 </div>
             </div>
         )

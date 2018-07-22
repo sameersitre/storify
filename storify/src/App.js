@@ -9,12 +9,11 @@ import Home from './_components/Home.js';
 import NavBar from './_components/NavBar';
 import Login from './_components/Login.js';
 
-import Button from '@material-ui/core/Button';
 class App extends Component {
   render() {
     return (
 
-      <div className="App">
+      <div >
         <HashRouter>
           <div >
             <ul
@@ -24,7 +23,7 @@ class App extends Component {
               <li><NavLink to="/Login"></NavLink></li>
             </ul>
             <div >
-              <Route path="/" component={NavBar} />
+              <Route  path="/" component={NavBar} />
               <Route path="/Home" component={Home} />
               <Route path="/Login" component={Login} />
             </div>

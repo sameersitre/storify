@@ -1,0 +1,156 @@
+[
+    {
+        "id": 1,
+        "StoryName": "Fallout76",
+        "Genre": "Baby Toys",
+        "Description": "This is baby toy description",
+        "ImageAddress":"61l1xM-wHfL._AC_SS300_.jpg",
+        "Price":"20"
+      },
+      {
+        "id": 2,
+        "StoryName": "Tomb Raider",
+        "Genre": "PC Games",
+        "Description": "This is PC games description",
+        "ImageAddress":"911M0rSyA2L._AC_SS300_.jpg",
+        "Price":"20"
+      },
+      {
+        "id": 3,
+        "StoryName": "DeadFire",
+        "Genre": "Baby Toys",
+        "Description": "This is baby toy description",
+        "ImageAddress":"51Z5rN9MTbL.jpg",
+        "Price":"20"
+
+      },
+      {
+        "id": 4,
+        "StoryName": "Just Cause 4",
+        "Genre": "Baby Toys",
+        "Description": "This is baby toy description",
+        "ImageAddress":"71cftQmbMuL._AC_SS300_.jpg",
+        "Price":"20"
+
+      },
+      {
+        "id": 5,
+        "StoryName": "Yakuza",
+        "Genre": "Baby Toys",
+        "Description": "This is baby toy description",
+        "ImageAddress":"71gQybXAqRL._AC_SS300_.jpg",
+        "Price":"20"
+
+      },
+      {
+        "id": 6,
+        "StoryName": "The Incredibles",
+        "Genre": "Baby Toys",
+        "Description": "This is baby toy description",
+        "ImageAddress":"71Qm-OJOQiL._AC_SS300_.jpg",
+        "Price":"20"
+
+      },
+      {
+        "id": 7,
+        "StoryName": "Assasin's Creed Odyssey",
+        "Genre": "Baby Toys",
+        "Description": "This is baby toy description",
+        "ImageAddress":"71til2IH2CL._AC_SS300_.jpg",
+        "Price":"20"
+
+      },
+      {
+        "id": 8,
+        "StoryName": "Battlefield V",
+        "Genre": "Baby Toys",
+        "Description": "This is baby toy description",
+        "ImageAddress":"81iyi3fEVZL._AC_SS300_.jpg",
+        "Price":"20"
+
+      },{
+        "id": 9,
+        "StoryName": "The Crew 2",
+        "Genre": "Baby Toys",
+        "Description": "This is baby toy description",
+        "ImageAddress":"81VgY4pXwtL._AC_SS300_.jpg",
+        "Price":"20"
+
+      },
+      {
+        "id": 10,
+        "StoryName": "God of War",
+        "Genre": "Baby Toys",
+        "Description": "This is baby toy description",
+        "ImageAddress":"91-w0IOeU5L._AC_SS300_.jpg",
+        "Price":"20"
+
+      },
+      {
+        "id": 11,
+        "StoryName": "Detroit : become human",
+        "Genre": "Baby Toys",
+        "Description": "This is baby toy description",
+        "ImageAddress":"91aFy6jNQxL._AC_SS300_.jpg",
+        "Price":"20"
+
+      },
+      {
+        "id": 10,
+        "StoryName": "God of War",
+        "Genre": "Baby Toys",
+        "Description": "This is baby toy description",
+        "ImageAddress":"91-w0IOeU5L._AC_SS300_.jpg",
+        "Price":"20"
+
+      },
+      {
+        "id": 11,
+        "StoryName": "Detroit : become human",
+        "Genre": "Baby Toys",
+        "Description": "This is baby toy description",
+        "ImageAddress":"91aFy6jNQxL._AC_SS300_.jpg",
+        "Price":"20"
+
+      },
+      {
+        "id": 10,
+        "StoryName": "God of War",
+        "Genre": "Baby Toys",
+        "Description": "This is baby toy description",
+        "ImageAddress":"91-w0IOeU5L._AC_SS300_.jpg",
+        "Price":"20"
+
+      },
+      {
+        "id": 11,
+        "StoryName": "Detroit : become human",
+        "Genre": "Baby Toys",
+        "Description": "This is baby toy description",
+        "ImageAddress":"91aFy6jNQxL._AC_SS300_.jpg",
+        "Price":"20"
+
+      },
+      {
+        "id": 10,
+        "StoryName": "God of War",
+        "Genre": "Baby Toys",
+        "Description": "This is baby toy description",
+        "ImageAddress":"91-w0IOeU5L._AC_SS300_.jpg",
+        "Price":"20"
+
+      },
+      {
+        "id": 11,
+        "StoryName": "Detroit : become human",
+        "Genre": "Baby Toys",
+        "Description": "This is baby toy description",
+        "ImageAddress":"91aFy6jNQxL._AC_SS300_.jpg",
+        "Price":"20"
+
+      }
+
+          
+
+        ]
+        

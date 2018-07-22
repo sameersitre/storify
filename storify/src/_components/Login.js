@@ -1,15 +1,22 @@
 import React, { Component } from 'react';
 import { Button, Input } from '@material-ui/core/';
+import './Login.css';
 
 class Login extends Component {
     render() {
         return (
-            <div>
-                <p> Login Into Storify and be mesmarised</p>
-                <div style={{ display: 'grid' }}>
+            <div className='input'>
+                <p className="loginText"> Login Into Storify and be mesmarised</p>
+                <div  >
                     <Input placeholder="Username" />
-                    <Input placeholder="Password" />
-                    <Button color="green" variant="contained">Submit</Button>
+                </div>
+                <div>
+                    <Input placeholder="Password" className="inputSpace" type="password" />
+                </div>
+                <div className="inputSpace">
+                    <Button color="primary" variant="contained" >Sign In</Button>
+                    <br /><br />
+                    <Button color="inherit:green" variant="outlined">New to Storify, Sign Up</Button>
                 </div>
             </div>
         )

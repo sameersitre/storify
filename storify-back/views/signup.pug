@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+    body    
+    h3 Create Account
+    form(method='POST' action='/signup/register')
+        input(type='text',name='email', placeholder='Enter you email', required) 
+        br
+        input(type='text',name='name', placeholder='Enter you name', required) 
+        br
+        input(type='password',name='password', placeholder='Type in your password', required)
+        br
+        input(type='submit')
+    br
+    br
+    br
+    h3 Login to your ac.
+    form(method='POST' action='/signup/login')
+        input(type='text',name='name', placeholder='Enter you name', required) 
+        br
+        input(type='password',name='password', placeholder='Type in your password', required, )
+        br
+        input(type='submit')
+    

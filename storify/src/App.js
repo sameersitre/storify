@@ -23,7 +23,7 @@ class App extends Component {
               <li><NavLink to="/Login"></NavLink></li>
             </ul>
             <div >
-              <Route path="/" component={NavBar} />
+              <Route  path="/" component={NavBar} />
               <Route path="/Home" component={Home} />
               <Route path="/Login" component={Login} />
               <Route path="/Signup" component={Signup} />

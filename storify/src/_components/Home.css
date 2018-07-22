@@ -1,0 +1,37 @@
+
+.hor-slide-container{
+    display: grid;
+    justify-content: left;
+    width: inherit;
+     height: 700px;
+    border: 1px solid rgb(177, 177, 177);
+      
+      overflow-y: auto;
+      overflow-y: scroll;
+      grid-template-columns: 550px 550px 550px  ;
+
+    }
+    
+    .card{
+        height: 200px;
+        padding: 0px 10px 10px 10px ;
+        margin: 20px;
+       box-shadow: 0px 5px 20px rgb(202, 202, 202);
+       border-radius: 10px;
+       display: inline-block;
+    }
+  
+    .bar{
+      height: 50px;
+      font-size: 8mm;
+      border: 10px;
+  
+    }
+  
+  
+    .info{
+      text-align: center;
+    }
+  button{
+    font-size: 15px;
+  }

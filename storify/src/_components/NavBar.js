@@ -28,12 +28,12 @@ function ButtonAppBar(props) {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <Button color="inherit">Home</Button>
+        <Link to ="/Home" text-decoration="none"><Button color="inherit" >Home</Button></Link>
           <Button color="inherit">Completed Stories</Button>
           <Button color="inherit">Ongoing Stories</Button>
           <Button color="inherit">Create +</Button>
           {<Typography variant="title" color="inherit" className={classes.flex}></Typography>}
-          <Link to ="/Login"><Button color="inherit" >Login</Button></Link>
+          <Link to ="/Login"><Button color="inherit" text-color="white">Login</Button></Link>
         </Toolbar>
       </AppBar>
     </div>

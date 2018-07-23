@@ -23,10 +23,10 @@ class App extends Component {
               <li><NavLink to="/Login"></NavLink></li>
             </ul>
             <div >
-              <Route  path="/" component={NavBar} />
+              <Route exact path="/" component={NavBar} />
               <Route path="/Home" component={Home} />
-              <Route path="/Login" component={Login} />
-              <Route path="/Signup" component={Signup} />
+              <Route exact path="/Login" component={Login} />
+              <Route exact path="/Signup" component={Signup} />
             </div>
           </div>
         </HashRouter>

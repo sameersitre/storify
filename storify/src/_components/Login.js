@@ -1,26 +1,36 @@
 import React, { Component } from 'react';
 import { Button, Input } from '@material-ui/core/';
 import './Login.css';
-import { Link } from 'react-router-dom';
+import {Route, Link } from 'react-router-dom';
+import NavBar from './NavBar';
+import styled from 'styled-components';
+import LoginButton from '../uielements/button'
+
+
+const LoginInput = styled(Input)`
+    input{
+        text-align: center;
+    } 
+`;
 
 class Login extends Component {
     render() {
         return (
             <div className='input' >
-                <p className="loginText"> Login Into Storify and get mesmarised</p>
+                <p className="loginText"> Login Into Storify and Get Mesmarised</p>
                 <div  >
-                    <Input placeholder="Username" />
+                    <LoginInput placeholder="Username" className="custom"/>
                 </div>
                 <div>
-                    <Input placeholder="Password" className="inputSpace" type="password" />
+                    <LoginInput placeholder="Password" className="inputSpace" type="password" />
                 </div>
                 <div className="inputSpace">
                     <Link to="/Home">
-                        <Button color="primary" variant="contained" >Sign In</Button>
+                        <LoginButton color="primary" variant="contained" >Sign In</LoginButton>
                     </Link>
                     <div className="newSignUp">
                         <p className="text-signup">New To Storify</p>
-                        <Link to="/Signup">
+                        <Link exact="true" to="/Signup">
                             <Button color="secondary" variant="outlined">Create Your Storify Account</Button>
                         </Link>
                     </div>

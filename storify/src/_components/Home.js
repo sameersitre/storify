@@ -5,6 +5,7 @@ import Stories from '../_data/StoriesDB.json';
 //import Card from './Card'
 import StoryCard from './StoryCard';
 import MediaCard from './MediaCard';
+import NavBar from './NavBar';
 class Home extends Component {
     // constructor() {
     //     super();
@@ -15,6 +16,7 @@ class Home extends Component {
     render() {
         return (
             <div>
+                <NavBar />
                 <h3 align="center">TOP STORY COLLABORATIONS</h3>
 
                 <div className='hor-slide-container'  >

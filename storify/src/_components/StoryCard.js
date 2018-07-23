@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
+import ProductInfo from './ProductInfo.js';
 
 class StoryCard extends Component {
     constructor() {
@@ -22,7 +23,13 @@ class StoryCard extends Component {
 
     render() {
         if (this.state.productIndex !== '') {
+            console.log('&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&');
+            <ProductInfo value={this.state.productIndex}/>
+            console.log('&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*******************');
+
             return <Redirect to='/ProductInfo' />
+            console.log('&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&######################');
+
         }
         return (
             <div className='card' onClick={(e) =>

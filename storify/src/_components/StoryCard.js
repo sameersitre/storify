@@ -26,7 +26,7 @@ class StoryCard extends Component {
         return (
             <div className='card' >
                 
-                <div class="info" >
+                <div className="info" >
                     <h2>{this.props.products.id}.{this.props.products.StoryName}</h2>
                      <div align="left">{this.props.products.Description}</div><br />
                    

@@ -29,7 +29,7 @@ function ButtonAppBar(props) {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-        <Link to ="/Home" text-decoration="none" ><Button color="inherit" >Home</Button></Link>
+        <Link to ="/Home" textDecoration="none" ><Button color="inherit" >Home</Button></Link>
           <Button color="inherit">Completed Stories</Button>
           <Button color="inherit">Ongoing Stories</Button>
           <Button color="inherit">Create +</Button>

@@ -7,7 +7,7 @@ class Login extends Component {
     render() {
         return (
             <div className='input' >
-                <p className="loginText"> Login Into Storify and be mesmarised</p>
+                <p className="loginText"> Login Into Storify and get mesmarised</p>
                 <div  >
                     <Input placeholder="Username" />
                 </div>

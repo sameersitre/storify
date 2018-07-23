@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+    body
+    p hi #{session}
+    br
+    br
+    br
+    a(href="/signup") signup
+    br
+    br
+    br
+    form(method='POST' action='/signout')
+        input(type='submit', value="signout")
+    br
+    br
+    br
+    a(href="/prompt") Create your own story
+    br
+    br
+    a(href="/profile") My Profile
+    br
+    br
+    p list of items
+    //- ol
+    //-     each i in item
+    //-         li  
+    //-             | #{i.title} 
+    //-             br
+    //-             | #{i.description}
+    //-             br
+    //-             | #{i.addedBy}  

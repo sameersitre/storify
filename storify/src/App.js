@@ -6,30 +6,30 @@ import {
   HashRouter
 } from "react-router-dom";
 import Home from './_components/Home.js';
-import NavBar from './NavBar.js';
+import NavBar from './_components/NavBar';
 import Login from './_components/Login.js';
+import Signup from './_components/Signup';
 
-import Button from '@material-ui/core/Button';
 class App extends Component {
   render() {
     return (
 
-      <div className="App">
+      <div >
         <HashRouter>
           <div >
             <ul>
-              <li><NavLink to="/">Cart</NavLink></li>
-              <li><NavLink to="/Home">Home</NavLink></li>
-              <li><NavLink to="/Login">Login</NavLink></li>
+              <li><NavLink to="/"></NavLink></li>
+              <li><NavLink to="/Home"></NavLink></li>
+              <li><NavLink to="/Login"></NavLink></li>
             </ul>
             <div >
-              <Route path="/" component={NavBar} />
+              <Route  path="/" component={NavBar} />
               <Route path="/Home" component={Home} />
               <Route path="/Login" component={Login} />
+              <Route path="/Signup" component={Signup} />
             </div>
           </div>
         </HashRouter>
-        <Button variant="contained" color="primary"></Button>
       </div>
     );
   }

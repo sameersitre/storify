@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
+import Button from '@material-ui/core/Button';
 
 class StoryCard extends Component {
     constructor() {
@@ -24,13 +25,17 @@ class StoryCard extends Component {
             return <Redirect to='/ProductInfo' />
         }
         return (
-            <div className='card' >
+            <div className='card' onClick={(e) =>
+                this.cardClick(this.props.products.id, this.props.products.ImageAddress, e)} >
                 
                 <div className="info" >
                     <h2>{this.props.products.id}.{this.props.products.StoryName}</h2>
                      <div align="left">{this.props.products.Description}</div><br />
                    
                 </div>
+                <Button size="small" color="primary">
+            Learn More
+          </Button>
             </div>
         );
     }

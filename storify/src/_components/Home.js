@@ -4,7 +4,7 @@ import Stories from '../_data/StoriesDB.json';
 
 //import Card from './Card'
 import StoryCard from './StoryCard';
-
+import MediaCard from './MediaCard';
 class Home extends Component {
     // constructor() {
     //     super();
@@ -14,15 +14,14 @@ class Home extends Component {
     // }
     render() {
         return (
-            <div> 
-            <h3 align="center">TOP STORY COLLABORATIONS</h3>
+            <div>
+                <h3 align="center">TOP STORY COLLABORATIONS</h3>
 
-                <div className='hor-slide-container' style={{ padding: '20px 20px 20px 20px' }} >
+                <div className='hor-slide-container'  >
 
-                    {Stories.map((game, i) =>
-                        <StoryCard key={i} products={game} />)}
+                    {Stories.map((game, i) => <StoryCard key={i} products={game} />)}
                 </div>
-                
+
 
             </div>
         );

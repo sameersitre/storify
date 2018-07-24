@@ -3,5 +3,6 @@ var promptSchema = new mongoose.Schema({
     character1: String,
     character2: String,
     location: String,
+    cid: String,
 });
-module.exports= mongoose.model("Prompts", promptSchema);
+module.exports= mongoose.model("Prompt", promptSchema);

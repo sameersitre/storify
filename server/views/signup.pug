@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Document
-    body    
+extends completedStories
+block content 
+    h3 The signup page   
     h3 Create Account
-    form(method='POST' action='/signup/register')
+    form(method='POST' action='/login/register')
         input(type='text',name='email', placeholder='Enter you email', required) 
         br
         input(type='text',name='name', placeholder='Enter you name', required) 
@@ -19,8 +14,8 @@ html(lang="en")
     br
     br
     h3 Login to your ac.
-    form(method='POST' action='/signup/login')
-        input(type='text',name='name', placeholder='Enter you name', required) 
+    form(method='POST' action='/login/check')
+        input(type='text',name='email', placeholder='Enter you email', required) 
         br
         input(type='password',name='password', placeholder='Type in your password', required, )
         br

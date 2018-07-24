@@ -31,3 +31,13 @@
 .newSignUp{
     margin-top: 30px;
 }
+.bigStorify{
+    text-align: center;
+    color: rgb(138, 129, 116);
+    font-family: serif;
+    font-size: 30px;
+}
+.com{
+    display: inline;
+    font-size: 15px;
+}

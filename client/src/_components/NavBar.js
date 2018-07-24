@@ -5,7 +5,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './NavBar.css';
 
 const styles = {
@@ -19,26 +19,35 @@ const styles = {
     marginLeft: 12,
     marginRight: 20,
   },
+  background:{
+    background:"#9191d4"
+  }
 };
 
 function ButtonAppBar(props) {
   const { classes } = props;
-  
+
   return (
-    
+
     <div className={classes.root}>
-      <AppBar position="static">
-        <Toolbar>
-        <Link to ="/Home" textDecoration="none" ><Button color="inherit" >Home</Button></Link>
-          <Button color="inherit">Completed Stories</Button>
+      <AppBar position="static" >
+        <Toolbar className={classes.background}>
+          <Link to="/Home" textDecoration="none" ><Button color="inherit" >Home</Button></Link>
+
+          <Link to='/Stories'>
+            <Button color="inherit">Stories</Button>
+          </Link>
+
           <Button color="inherit">Ongoing Stories</Button>
           <Button color="inherit">Create +</Button>
           {<Typography variant="title" color="inherit" className={classes.flex}></Typography>}
-          <Link to ="/Login" ><Button  variant="fab">Login</Button></Link>
+          <Link to="/Login" >
+            <Button variant="fab">Login</Button>
+          </Link>
         </Toolbar>
       </AppBar>
     </div>
- 
+
   );
 }
 

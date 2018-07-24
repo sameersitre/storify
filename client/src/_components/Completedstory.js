@@ -10,7 +10,7 @@ class CompletedStory extends Component {
             <div>
                 <NavBar />
                 <div className='storycard'>
-                    Welcome to Storify.com
+                    <p className="storycardText">  Welcome to Storify.com</p>
             <div className="avatarDiv">
                         <Avatar src={friends} alt="nothing" />
                     </div>

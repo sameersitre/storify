@@ -3,6 +3,7 @@ import { Button, Input } from '@material-ui/core/';
 import './Signup.css';
 import './Login.css'
 import { Link } from 'react-router-dom';
+import signupButton from './uielements/signupButton.js';
 
 class Signup extends Component {
     render() {
@@ -33,7 +34,7 @@ class Signup extends Component {
                     </div>
                     <div className="signUp">
                         <Link to="/Login">
-                            <Button color="secondary" variant="contained">Create My Storify Account</Button>
+                            <Button color="secondary" variant="contained" style={{background:"#17ad8d", fontFamily:"monospace",fontSize:"16px"}}>Create My Storify Account</Button>
                         </Link>
                     </div>
                     <p className="gotoLogin">Already Have an Account?<Link to="/Login" style={{ color: "blue" }}>Signin</Link></p>

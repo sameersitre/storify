@@ -9,7 +9,8 @@ import Home from './_components/Home.js';
 import NavBar from './_components/NavBar';
 import Login from './_components/Login.js';
 import Signup from './_components/Signup';
-import CompletedStory from './_components/Completedstory.js'
+import CompletedStory from './_components/Completedstory.js';
+import ViewStory from './_components/ViewStory';
 class App extends Component {
   render() {
     return (
@@ -22,6 +23,8 @@ class App extends Component {
               <li><NavLink to="/Home"></NavLink></li>
               <li><NavLink to="/Login"></NavLink></li>
               <li><NavLink to="/Stories"></NavLink></li>
+              <li><NavLink to="/ViewStory"></NavLink></li>
+
             </ul>
             <div >
               <Route exact path="/" component={NavBar} />
@@ -29,6 +32,8 @@ class App extends Component {
               <Route exact path="/Login" component={Login} />
               <Route exact path="/Signup" component={Signup} />
               <Route path="/Stories" component={CompletedStory}/>
+              <Route path="/ViewStory" component={ViewStory}/>
+
             </div>
           </div>
         </HashRouter>

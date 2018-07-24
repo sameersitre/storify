@@ -4,7 +4,7 @@ import Stories from '../_data/StoriesDB.json';
 
 //import Card from './Card'
 import StoryCard from './StoryCard';
-import MediaCard from './MediaCard';
+//import MediaCard from './MediaCard';
 import NavBar from './NavBar';
 class Home extends Component {
     // constructor() {

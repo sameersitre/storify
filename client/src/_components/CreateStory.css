@@ -1,0 +1,19 @@
+.createStory{
+    text-align: center;
+    margin-top:20px;
+    font-family:cursive;
+    font-size: 35px;
+    color: darkcyan;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #e01f1f73;
+}
+
+.introText{
+    
+    padding: 5px;
+    
+     text-align: center;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-size: 20px;
+}

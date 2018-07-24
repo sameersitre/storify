@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
-//import ProductInfo from './ProductInfo.js';
+import Card from '@material-ui/core/Card';
 
 class StoryCard extends Component {
     constructor() {
@@ -17,22 +17,22 @@ class StoryCard extends Component {
         this.setState({ productImageName: imgname })
         alert(id +" "+imgname+ " card clicked");
     }
-
     btnImageClick(event) {
     }
-
     render() {
+      
         if (this.state.productIndex !== '') {
            {/* console.log('&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&');
             <ProductInfo value={this.state.productIndex}/>
         console.log('&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*******************');*/}
 
-            return <Redirect to='/ProductInfo' />
+            return <Redirect to='/ViewStory' />
             console.log('&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&######################');
 
         }
         return (
-            <div className='card' onClick={(e) =>
+            <Card style={{padding: '0px 10px 10px 10px', height: '200px', margin:'10px'
+        }} onClick={(e) =>
                 this.cardClick(this.props.products.id, this.props.products.ImageAddress, e)} >
                 
                 <div className="info" >
@@ -43,7 +43,8 @@ class StoryCard extends Component {
                 <Button size="small" color="primary">
             Learn More
           </Button>
-            </div>
+
+            </Card>
         );
     }
 }

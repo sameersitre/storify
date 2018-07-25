@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
-
+import transitions from '../../node_modules/@material-ui/core/styles/transitions';
+import './StoryCard.css';
 class StoryCard extends Component {
     constructor() {
         super();
@@ -19,6 +20,14 @@ class StoryCard extends Component {
     }
     btnImageClick(event) {
     }
+
+    cardStyle={padding: '0px 10px 10px 10px', 
+            height: '200px',
+             margin:'20px',
+             boxShadow:'0px 1px 20px 2px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12)',
+             borderRadius:'5px',
+            trans:{boxShadow:'3s'}
+        }
     render() {
       
         if (this.state.productIndex !== '') {
@@ -30,13 +39,16 @@ class StoryCard extends Component {
             console.log('&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&######################');
 
         }
+        
+
         return (
-            <Card style={{padding: '0px 10px 10px 10px', height: '200px', margin:'10px'
-        }} onClick={(e) =>
-                this.cardClick(this.props.products.id, this.props.products.ImageAddress, e)} >
+            
+            <div className='cardhover' style={this.cardStyle} 
+        onClick={(e) =>
+                this.cardClick(this.props.products.id, this.props.products.ImageAddress, e)}   >
                 
                 <div className="info" >
-                    <h2>{this.props.products.id}.{this.props.products.StoryName}</h2>
+                    <h2>{this.props.products.StoryName}</h2>
                      <div align="left">{this.props.products.Description}</div><br />
                    
                 </div>
@@ -44,7 +56,7 @@ class StoryCard extends Component {
             Read
           </Button>
 
-            </Card>
+            </div>
         );
     }
 }

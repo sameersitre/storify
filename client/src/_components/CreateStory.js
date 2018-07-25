@@ -40,19 +40,19 @@ class CreateStory extends Component {
                     {promptvalue &&
                         <div className="prompt">
                             <p style={{ fontSize: "15px" }}> Click below to get a prompt </p>
-                            <Button color="primary" variant="contained" onClick={this.promptClick}> Prompt </Button>
+                            <Button style={{backgroundColor:"#bb481bb8",color:"white"}} variant="contained" onClick={this.promptClick}> Prompt </Button>
                         </div>
                     }
 
 
-                    { this.state.getPrompt &&
+                    {this.state.getPrompt &&
                         <div className="promptCard">
                             abcdefghijklmnopqrstuvwxyz
             <div className="promptButtons">
-                                <Button color="secondary" variant="outlined" style={{ float: "left" }} onClick={this.promptClick}> New Prompt</Button>
-                                
-                                <Button color="secondary" variant="raised" style={{ float: "right" }} onClick={this.createStoryClick}>Create Story</Button>
-                               
+                                <Button style={{color:"#f30d0dd9",float:"left"}} variant="flat" onClick={this.promptClick}> New Prompt</Button>
+                                <Link to="/OngoingStories">
+                                    <Button style={{ backgroundColor: "rgb(23, 173, 141)", color: "white",float:"right" }} variant="raised"  onClick={this.createStoryClick}>Create Story</Button>
+                                </Link>
                             </div>
                         </div>
                     }

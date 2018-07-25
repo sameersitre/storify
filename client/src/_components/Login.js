@@ -24,13 +24,13 @@ class Login extends Component {
                     </div>
                     <div className="inputSpace">
                         <Link to="/Home">
-                            <LoginButton color="primary" variant="contained" >Sign In</LoginButton>
+                            <LoginButton style={{backgroundColor:"#2aa20c",color:"white"}} variant="contained" >Sign In</LoginButton>
                         </Link>
                     </div>
                 </div>
                 <div className="newSignUp">
                     <p className="text-signup">New To Storify</p>
-                    <Link exact="true" to="/Signup">
+                    <Link  to="/Signup">
                         <Button style={{ color: "#d82e07" }} variant="outlined">Create Your Storify Account</Button>
                     </Link>
                 </div>

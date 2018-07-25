@@ -8,7 +8,7 @@ import Signup from './_components/Signup';
 import CompletedStory from './_components/Completedstory.js';
 import ViewStory from './_components/ViewStory';
 import CreateStory from './_components/CreateStory';
-
+import OngoingStories from './_components/OngoingStories'
 
 class App extends Component {
   render() {
@@ -24,9 +24,9 @@ class App extends Component {
               <li><NavLink to="/Stories"></NavLink></li>
               <li><NavLink to="/ViewStory"></NavLink></li>
               <li><NavLink to="/CreateStory"></NavLink></li>
-
-
+              <li><NavLink to="/OngoingStories"></NavLink></li>
             </ul>
+            
             <div >
               <Route exact path="/" component={NavBar} />
               <Route path="/Home" component={Home} />
@@ -35,7 +35,7 @@ class App extends Component {
               <Route path="/Stories" component={CompletedStory}/>
               <Route path="/ViewStory" component={ViewStory}/>
               <Route path="/CreateStory" component={CreateStory}/>
-
+              <Route path="/OngoingStories" component={OngoingStories}/>
             </div>
           </div>
         </HashRouter>

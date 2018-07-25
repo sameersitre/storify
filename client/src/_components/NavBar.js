@@ -37,8 +37,11 @@ function ButtonAppBar(props) {
           <Link to='/Stories'>
             <Button color="inherit">Stories</Button>
           </Link>
-
+           
+           <Link to="/OngoingStories">
           <Button color="inherit">Ongoing Stories</Button>
+          </Link>
+          
           <Link to="/CreateStory">
           <Button color="inherit">Create Your's</Button>
           </Link>

@@ -41,7 +41,7 @@ class StoryCard extends Component {
                    
                 </div>
                 <Button size="small" color="primary">
-            Learn More
+            Read
           </Button>
 
             </Card>

@@ -38,7 +38,7 @@ function ButtonAppBar(props) {
             <Button color="inherit">Stories</Button>
           </Link>
 
-          <Button color="inherit">Ongoing Stories</Button>
+          <Link to='/StoryCardsTwo'><Button color="inherit">Ongoing Stories</Button></Link>
           <Button color="inherit">Create +</Button>
           {<Typography variant="title" color="inherit" className={classes.flex}></Typography>}
           <Link to="/Login" >

@@ -11,6 +11,8 @@ import Login from './_components/Login.js';
 import Signup from './_components/Signup';
 import CompletedStory from './_components/Completedstory.js';
 import ViewStory from './_components/ViewStory';
+import StoryCardsTwo from './_components/StoryCardTwo';
+
 class App extends Component {
   render() {
     return (
@@ -24,7 +26,7 @@ class App extends Component {
               <li><NavLink to="/Login"></NavLink></li>
               <li><NavLink to="/Stories"></NavLink></li>
               <li><NavLink to="/ViewStory"></NavLink></li>
-
+              <li><NavLink to="/StoryCardsTwo"></NavLink></li>
             </ul>
             <div >
               <Route exact path="/" component={NavBar} />
@@ -33,6 +35,7 @@ class App extends Component {
               <Route exact path="/Signup" component={Signup} />
               <Route path="/Stories" component={CompletedStory}/>
               <Route path="/ViewStory" component={ViewStory}/>
+              <Route path="/StoryCardsTwo" component={StoryCardsTwo}/>
 
             </div>
           </div>

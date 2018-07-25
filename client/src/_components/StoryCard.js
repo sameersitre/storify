@@ -38,7 +38,6 @@ class StoryCard extends Component {
                 <div className="info" >
                     <h2>{this.props.products.id}.{this.props.products.StoryName}</h2>
                      <div align="left">{this.props.products.Description}</div><br />
-                   
                 </div>
                 <Button size="small" color="primary">
             Read

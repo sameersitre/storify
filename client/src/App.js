@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import {
-  Route,
-  NavLink,
-  HashRouter
-} from "react-router-dom";
+import { Route,NavLink,HashRouter} from "react-router-dom";
 import Home from './_components/Home.js';
 import NavBar from './_components/NavBar';
 import Login from './_components/Login.js';

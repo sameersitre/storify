@@ -1,13 +1,11 @@
 const mongoose = require('mongoose');
 var storySchema = new mongoose.Schema({
     title: String,
-    cid: String,
+    character1: String,
+    character2: String,
+    location: String,
     description: String,
     edit: Boolean,
-    createdBy: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "Users",
-    },
-    contributors: [],
+    user: String,
 });
 module.exports= mongoose.model("Stories", storySchema);

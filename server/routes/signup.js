@@ -2,6 +2,7 @@ const express = require('express');
 var router = express.Router();
 var completeShuffle = require('./algorithm.js');
 const User = require('../models/users');
+const session= require('express-session');
 
 
 router.get('/login', (req,res)=>{
@@ -22,7 +23,7 @@ router.post('/login/:add', (req,res)=>{
         
         var newUser= new User({name: req.body.name,email: req.body.email, password: shufflePassword});
         req.session.user=newUser;
-        newUser.save().then(()=>{res.render('completedStories', {session: req.session.user.name})}).catch(e=>res.redirect('/'));
+        newUser.save().then(()=>{res.redirect('/')}).catch(e=>res.redirect('/login'));
         }
 
     else if (req.params.add==="check"){
@@ -41,7 +42,7 @@ router.post('/login/:add', (req,res)=>{
                 return;
             }
             else{
-                // req.session.user=data;
+                req.session.user=data;
                 res.redirect('/');
             }
         })
@@ -53,7 +54,7 @@ router.post('/login/:add', (req,res)=>{
 
 router.post('/signout', (req,res)=>{
     // console.log(req.session.user.name);
-    if (req.session){
+    if (req.session.user){
         req.session.destroy();
         res.redirect('/');
     }else{

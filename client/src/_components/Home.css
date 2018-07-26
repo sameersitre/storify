@@ -9,9 +9,14 @@
       overflow-y: auto;
       overflow-y: scroll;
       grid-template-columns: 33% 33% 33%  ;
+      background-color: #cecece5c;
 
     }
-    
+    .hor-slide-container > div:hover {
+      transform: scale(1.005);
+      transition: 0.1s;
+      box-shadow: #ffce6ea1 -2px 3px 32px 3px;
+  }
     .card{
         height: 200px;
         padding: 0px 10px 10px 10px ;

@@ -17,7 +17,7 @@ class Home extends Component {
         return (
             <div>
                 <NavBar />
-                <h3 align="center">TOP STORY COLLABORATIONS</h3>
+                <h3 align="center" >TOP STORY COLLABORATIONS</h3>
                 <div className='hor-slide-container'  >
                     {Stories.map((game, i) => <StoryCard key={i} products={game} />)}
                 </div>

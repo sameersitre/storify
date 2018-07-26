@@ -9,8 +9,13 @@ class CreateStory extends Component {
         this.state = {
             promptNotClicked: true,
             getPrompt: false,
-            newpromptClicked: false,
-            createStoryClicked: false
+            /*newpromptClicked: false,
+            createStoryClicked: false*/
+            character:{
+                Sampth:"Sampath:Backend Guy",
+                Harish:"Harish:FrontEnd Guy",
+                Sameer:"Sameer:FrontEnd Guy"
+            }
         }
     }
     promptClick = () => {
@@ -43,12 +48,13 @@ class CreateStory extends Component {
                             <Button style={{backgroundColor:"#bb481bb8",color:"white"}} variant="contained" onClick={this.promptClick}> Prompt </Button>
                         </div>
                     }
-
+   
 
                     {this.state.getPrompt &&
                         <div className="promptCard">
+                        <p>{this.state.character.Sameer}</p>
                             abcdefghijklmnopqrstuvwxyz
-            <div className="promptButtons">
+                            <div className="promptButtons">
                                 <Button style={{color:"#f30d0dd9",float:"left"}} variant="flat" onClick={this.promptClick}> New Prompt</Button>
                                 <Link to="/OngoingStories">
                                     <Button style={{ backgroundColor: "rgb(23, 173, 141)", color: "white",float:"right" }} variant="raised"  onClick={this.createStoryClick}>Create Story</Button>

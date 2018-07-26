@@ -33,11 +33,6 @@ class StoryCard extends Component {
         backgroundColor: 'white',
     }
 
-    mouseover = (e) => {
-    }
-
-
-
     render() {
 
         if (this.state.productIndex !== '') {
@@ -48,13 +43,11 @@ class StoryCard extends Component {
         return (
             <div style={this.cardStyle}
                 onClick={(e) =>
-                    this.cardClick(this.props.products.id, this.props.products.ImageAddress, e)}
-
-                onMouseOver={this.mouseover}
-            >
-                <div>
+                    this.cardClick(this.props.products.id, this.props.products.ImageAddress, e)} >
+                <div className="info"  >
                     <h2>{this.props.products.StoryName}</h2>
-                    <div align="left">{this.props.products.Description}</div><br />
+                    <div  align="left">{this.props.products.Description}</div><br />
+
                 </div>
 
                 <div  >

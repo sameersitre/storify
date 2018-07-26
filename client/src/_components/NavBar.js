@@ -31,42 +31,36 @@ function ButtonAppBar(props) {
   const { classes } = props;
 
   return (
-    <div>
+ 
+    <div className={classes.root}>
+      <AppBar position="static"  >
 
+        <Toolbar className={classes.background}>
+          <Link to="/Home" textDecoration="none" >
+            <div >
+              <Link to="/Home" className="bigStorify">
+                <h3 > Storify<p className="com">.com</p></h3>
+              </Link>
+            </div>
+          </Link>
 
-      <div className={classes.root}>
-        <AppBar position="static"  >
+          <Link to="/OngoingStories">
+            <Button variant="contained" color="inherit" className={classes.buttonstyle}>Ongoing Stories</Button>
+          </Link>
 
-
-          <Toolbar className={classes.background}>
-            <Link to="/Home" textDecoration="none" >
-              <div >
-                <Link to="/Home" className="bigStorify">
-                  <h3 > Storify<p className="com">.com</p></h3>
-                </Link>
-              </div>
-            </Link>
-
-            <Link to='/Stories'>
-              <Button variant="contained" color="inherit" className={classes.buttonstyle}>Stories</Button>
-            </Link>
-
-            <Link to="/OngoingStories">
-              <Button variant="contained" color="inherit" className={classes.buttonstyle}>Ongoing Stories</Button>
-            </Link>
-
-            <Link to="/CreateStory">
-              <Button variant="contained" color="inherit" className={classes.buttonstyle}>Create Your's</Button>
-            </Link>
-            {<Typography variant="title" color="inherit" className={classes.flex}></Typography>}
-            <Link to="/Login" >
-              <Button variant="fab">Login</Button>
-            </Link>
-          </Toolbar>
-        </AppBar>
-      </div>
-
+          <Link to="/CreateStory">
+            <Button variant="contained" color="inherit" className={classes.buttonstyle}>Create Your's</Button>
+          </Link>
+          {<Typography variant="title" color="inherit" className={classes.flex}></Typography>}
+          <Link to="/Login" >
+            <Button variant="fab">Login</Button>
+          </Link>
+        </Toolbar>
+      </AppBar>
     </div>
+
+      
+
   );
 }
 

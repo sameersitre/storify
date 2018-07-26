@@ -8,7 +8,8 @@ import Signup from './_components/Signup';
 import CompletedStory from './_components/Completedstory.js';
 import ViewStory from './_components/ViewStory';
 import CreateStory from './_components/CreateStory';
-import OngoingStories from './_components/OngoingStories'
+import OngoingStories from './_components/OngoingStories';
+import WriteStory from './_components/WriteStory'
 
 class App extends Component {
   render() {
@@ -25,6 +26,7 @@ class App extends Component {
               <li><NavLink to="/ViewStory"></NavLink></li>
               <li><NavLink to="/CreateStory"></NavLink></li>
               <li><NavLink to="/OngoingStories"></NavLink></li>
+              <li><NavLink to="/WriteStory"></NavLink></li>
             </ul>
             
             <div >
@@ -36,6 +38,7 @@ class App extends Component {
               <Route path="/ViewStory" component={ViewStory}/>
               <Route path="/CreateStory" component={CreateStory}/>
               <Route path="/OngoingStories" component={OngoingStories}/>
+              <Route path="/WriteStory" component={WriteStory}/>
             </div>
           </div>
         </HashRouter>

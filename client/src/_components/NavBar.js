@@ -9,39 +9,53 @@ import { Link } from 'react-router-dom';
 import './NavBar.css';
 
 const styles = {
-  
+
   flex: {
     flexGrow: 1,
   },
-  menuButton: {
-    marginLeft: 12,
-    marginRight: 20,
+
+  background:{
+    background:'#444444',
   },
- 
+  buttonstyle: {
+    width: "150px",
+    height: "50px",
+    Color:"inherit",
+    marginLeft: "10px",
+    fontColor:"white",
+  }
 };
+
 
 function ButtonAppBar(props) {
   const { classes } = props;
 
   return (
 
+    
     <div className={classes.root}>
-      <AppBar position="static" >
-        <Toolbar className={classes.background}>
-          <Link to="/Home" textDecoration="none" ><Button style={{width:"150px" , height:"60px"}} variant="contained" color="primary" className={classes.button}>
-        Home
-      </Button></Link>
+      <AppBar position="static"  >
+
+
+        <Toolbar  className={classes.background}>
+          <Link to="/Home" textDecoration="none" >
+          <div >
+                    <Link to="/Home" className="bigStorify">
+                        <h3 > Storify<p className="com">.com</p></h3>
+                    </Link>
+                </div>
+      </Link>
 
           <Link to='/Stories'>
-          <Button style={{width:"150px" , height:"60px"}} variant="contained" color="primary" className={classes.button}>Stories</Button>
+            <Button  variant="contained" color="inherit" className={classes.buttonstyle}>Stories</Button>
           </Link>
-           
-           <Link to="/OngoingStories">
-           <Button style={{width:"150px" , height:"60px"}} variant="contained" color="primary" className={classes.button}>Ongoing Stories</Button>
+
+          <Link to="/OngoingStories">
+            <Button  variant="contained" color="inherit" className={classes.buttonstyle}>Ongoing Stories</Button>
           </Link>
-          
+
           <Link to="/CreateStory">
-          <Button style={{width:"150px" , height:"60px"}} variant="contained" color="primary" className={classes.button}>Create Your's</Button>
+            <Button  variant="contained" color="inherit" className={classes.buttonstyle}>Create Your's</Button>
           </Link>
           {<Typography variant="title" color="inherit" className={classes.flex}></Typography>}
           <Link to="/Login" >

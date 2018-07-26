@@ -14,15 +14,15 @@ const styles = {
     flexGrow: 1,
   },
 
-  background:{
-    background:'#444444',
+  background: {
+    background: '#444444',
   },
   buttonstyle: {
     width: "150px",
     height: "50px",
-    Color:"inherit",
+    Color: "inherit",
     marginLeft: "10px",
-    fontColor:"white",
+    fontColor: "white",
   }
 };
 
@@ -32,30 +32,26 @@ function ButtonAppBar(props) {
 
   return (
 
-    
+
     <div className={classes.root}>
       <AppBar position="static"  >
 
 
-        <Toolbar  className={classes.background}>
+        <Toolbar className={classes.background}>
           <Link to="/Home" textDecoration="none" >
-          <div >
-                    <Link to="/Home" className="bigStorify">
-                        <h3 > Storify<p className="com">.com</p></h3>
-                    </Link>
-                </div>
-      </Link>
-
-          <Link to='/Stories'>
-            <Button  variant="contained" color="inherit" className={classes.buttonstyle}>Stories</Button>
+            <div >
+              <Link to="/Home" className="bigStorify">
+                <h3 > Storify<p className="com">.com</p></h3>
+              </Link>
+            </div>
           </Link>
 
           <Link to="/OngoingStories">
-            <Button  variant="contained" color="inherit" className={classes.buttonstyle}>Ongoing Stories</Button>
+            <Button variant="contained" color="inherit" className={classes.buttonstyle}>Ongoing Stories</Button>
           </Link>
 
           <Link to="/CreateStory">
-            <Button  variant="contained" color="inherit" className={classes.buttonstyle}>Create Your's</Button>
+            <Button variant="contained" color="inherit" className={classes.buttonstyle}>Create Your's</Button>
           </Link>
           {<Typography variant="title" color="inherit" className={classes.flex}></Typography>}
           <Link to="/Login" >

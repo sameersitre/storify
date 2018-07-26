@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Home.css';
 import Stories from '../_data/StoriesDB.json';
-
+import Practice from './Practice';
 //import Card from './Card'
 import StoryCard from './StoryCard';
 //import MediaCard from './MediaCard';
@@ -16,6 +16,7 @@ class Home extends Component {
     render() {
         return (
             <div>
+
                 <NavBar />
                 <h3 align="center" >TOP STORY COLLABORATIONS</h3>
                 <div className='hor-slide-container'  >

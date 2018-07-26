@@ -3,6 +3,8 @@ import NavBar from './NavBar';
 import './CreateStory.css';
 import { Button } from '../../node_modules/@material-ui/core';
 import { Link } from 'react-router-dom'
+
+const prompt = ["fdcgtfcdtgfc", "gfcgyhfcghfcvgh", "hgfchfchcvhcv", "hgcvhgcvhgvc"];
 class CreateStory extends Component {
     constructor(props) {
         super(props);
@@ -17,6 +19,13 @@ class CreateStory extends Component {
                 Sameer:"Sameer:FrontEnd Guy"
             }
         }
+    }
+    updatePrompt = () => {
+        const newPrompt = "ran";
+        this.setState({
+            character: {...this.state.character, Sameer:newPrompt} 
+        })
+
     }
     promptClick = () => {
         //let value = false;
@@ -53,9 +62,8 @@ class CreateStory extends Component {
                     {this.state.getPrompt &&
                         <div className="promptCard">
                         <p>{this.state.character.Sameer}</p>
-                            abcdefghijklmnopqrstuvwxyz
                             <div className="promptButtons">
-                                <Button style={{color:"#f30d0dd9",float:"left"}} variant="flat" onClick={this.promptClick}> New Prompt</Button>
+                                <Button style={{color:"#f30d0dd9",float:"left"}} variant="flat" onClick={this.updatePrompt}> New Prompt</Button>
                                 <Link to="/OngoingStories">
                                     <Button style={{ backgroundColor: "rgb(23, 173, 141)", color: "white",float:"right" }} variant="raised"  onClick={this.createStoryClick}>Create Story</Button>
                                 </Link>

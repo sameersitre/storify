@@ -19,8 +19,8 @@ const styles = {
     marginLeft: 12,
     marginRight: 20,
   },
-  background:{
-    background:"#9191d4"
+  background: {
+    background: "#9191d4"
   }
 };
 
@@ -28,31 +28,32 @@ function ButtonAppBar(props) {
   const { classes } = props;
 
   return (
+    <div>
 
-    <div className={classes.root}>
-      <AppBar position="static" >
-        <Toolbar className={classes.background}>
-          <Link to="/Home" textDecoration="none" ><Button color="inherit" >Home</Button></Link>
+      <div className={classes.root}>
+        <AppBar position="static" >
+          <Toolbar className={classes.background}>
+            <Link to="/Home" textDecoration="none" ><Button color="inherit" >Home</Button></Link>
 
-          <Link to='/Stories'>
-            <Button color="inherit">Stories</Button>
-          </Link>
-           
-           <Link to="/OngoingStories">
-          <Button color="inherit">Ongoing Stories</Button>
-          </Link>
-          
-          <Link to="/CreateStory">
-          <Button color="inherit">Create Your's</Button>
-          </Link>
-          {<Typography variant="title" color="inherit" className={classes.flex}></Typography>}
-          <Link to="/Login" >
-            <Button variant="fab">Login</Button>
-          </Link>
-        </Toolbar>
-      </AppBar>
+            <Link to='/Stories'>
+              <Button color="inherit">Stories</Button>
+            </Link>
+
+            <Link to="/OngoingStories">
+              <Button color="inherit">Ongoing Stories</Button>
+            </Link>
+
+            <Link to="/CreateStory">
+              <Button color="inherit">Create Your's</Button>
+            </Link>
+            {<Typography variant="title" color="inherit" className={classes.flex}></Typography>}
+            <Link to="/Login" >
+              <Button variant="fab">Login</Button>
+            </Link>
+          </Toolbar>
+        </AppBar>
+      </div>
     </div>
-
   );
 }
 

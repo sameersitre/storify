@@ -32,6 +32,7 @@ class StoryCard extends Component {
         borderRadius: '5px',
         trans: { boxShadow: '3s' }
     }
+
     render() {
 
         if (this.state.productIndex !== '') {
@@ -46,9 +47,10 @@ class StoryCard extends Component {
             <div  style={this.cardStyle}
                 onClick={(e) =>
                     this.cardClick(this.props.products.id, this.props.products.ImageAddress, e)} >
-                <div className="info" >
+                <div className="info"  >
                     <h2>{this.props.products.StoryName}</h2>
-                    <div align="left">{this.props.products.Description}</div><br />
+                    <div  align="left">{this.props.products.Description}</div><br />
+
                 </div>
 
                 <div  >

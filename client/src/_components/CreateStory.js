@@ -5,7 +5,24 @@ import { Button } from '../../node_modules/@material-ui/core';
 import { Link } from 'react-router-dom';
 import WriteStory from './WriteStory';
 
-const prompt = ["fdcgtfcdtgfc", "gfcgyhfcghfcvgh", "hgfchfchcvhcv", "hgcvhgcvhgvc"];
+const prompt = [{characters:["Characters:"," Batman"," ,Chacha Chowdary"],
+                 Location:"Hyderabad", Plot:"Chacha Invites"},
+                {characteres:["Micky","Chota Bheem"],
+                Location:"Jungle", Plot:"Something"},
+                {characters:["Characters:"," Bat"," ,Chacha "],
+                Location:"Hyderabad", Plot:"Chacha Invites"},
+                {characters:["Characters:"," man"," ,Chowdary"],
+                 Location:"Hyderabad", Plot:"Chacha Invites"},
+                 {characters:["Characters:"," atman"," ,cha Chowdary"],
+                 Location:"Hyderabad", Plot:"Chacha Invites"},
+                 {characters:["Characters:"," Ba"," ,Chacha "],
+                 Location:"Hyderabad", Plot:"Chacha Invites"},
+                 {characters:["Characters:"," Batman"," ,Chacha"],
+                 Location:"Hyderabad", Plot:"Chacha Invites"}
+            
+            
+            
+            ];
 class CreateStory extends Component {
     constructor(props) {
         super(props);
@@ -14,17 +31,16 @@ class CreateStory extends Component {
             getPrompt: false,
             /*newpromptClicked: false,
             createStoryClicked: false*/
-            character:{
-                Sampth:"Sampath:Backend Guy",
-                Harish:"Harish:FrontEnd Guy",
-                Sameer:"Sameer:FrontEnd Guy"
-            }
+            storyLine:""
         }
     }
     updatePrompt = () => {
-        const newPrompt = "ran";
+        console.log('%%%%%%%%%%%%%%%%%%%%%%%%%%%')
+        const newPrompt = prompt[Math.floor(Math.random()*prompt.length)];
+        console.log('-=-=-==-=-========-=-=-=-==-===-=-=-=')
         this.setState({
-            character: {...this.state.character, Sameer:newPrompt} 
+            //storyLine: {...this.state.storyLine, storyLine:newPrompt} 
+            storyLine:newPrompt,
         })
 
     }
@@ -62,7 +78,8 @@ class CreateStory extends Component {
 
                     {this.state.getPrompt &&
                         <div className="promptCard">
-                        <p>{this.state.character.Sameer}</p>
+                        <p>{this.state.storyLine.characters}</p>
+                        <p>{this.state.storyLine.Location}</p>
                             <div className="promptButtons">
                                 <Button style={{color:"#f30d0dd9",float:"left"}} variant="flat" onClick={this.updatePrompt}> New Prompt</Button>
                                 <Link to="/WriteStory">

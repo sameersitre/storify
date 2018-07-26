@@ -9,9 +9,7 @@ import { Link } from 'react-router-dom';
 import './NavBar.css';
 
 const styles = {
-  root: {
-    flexGrow: 1,
-  },
+  
   flex: {
     flexGrow: 1,
   },
@@ -19,9 +17,7 @@ const styles = {
     marginLeft: 12,
     marginRight: 20,
   },
-  background:{
-    background:"#9191d4"
-  }
+ 
 };
 
 function ButtonAppBar(props) {
@@ -32,18 +28,20 @@ function ButtonAppBar(props) {
     <div className={classes.root}>
       <AppBar position="static" >
         <Toolbar className={classes.background}>
-          <Link to="/Home" textDecoration="none" ><Button color="inherit" >Home</Button></Link>
+          <Link to="/Home" textDecoration="none" ><Button style={{width:"150px" , height:"60px"}} variant="contained" color="primary" className={classes.button}>
+        Home
+      </Button></Link>
 
           <Link to='/Stories'>
-            <Button color="inherit">Stories</Button>
+          <Button style={{width:"150px" , height:"60px"}} variant="contained" color="primary" className={classes.button}>Stories</Button>
           </Link>
            
            <Link to="/OngoingStories">
-          <Button color="inherit">Ongoing Stories</Button>
+           <Button style={{width:"150px" , height:"60px"}} variant="contained" color="primary" className={classes.button}>Ongoing Stories</Button>
           </Link>
           
           <Link to="/CreateStory">
-          <Button color="inherit">Create Your's</Button>
+          <Button style={{width:"150px" , height:"60px"}} variant="contained" color="primary" className={classes.button}>Create Your's</Button>
           </Link>
           {<Typography variant="title" color="inherit" className={classes.flex}></Typography>}
           <Link to="/Login" >

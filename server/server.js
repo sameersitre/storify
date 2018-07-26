@@ -13,6 +13,7 @@ const homeRouter = require('./routes/home');
 const ongoingRouter = require('./routes/ongoing');
 const newStoryRouter = require('./routes/newStory');
 const loginRouter = require('./routes/signup');
+const profileRouter = require('./routes/profile');
 
 //db connection
 mongoose.connect(("mongodb://localhost:27017/storify"), (err, db) => {
@@ -34,6 +35,7 @@ app.use('/', homeRouter);
 app.use(ongoingRouter);
 app.use(newStoryRouter);
 app.use(loginRouter);
+app.use(profileRouter);
 
 
 

@@ -6,11 +6,14 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Document
     body
-    a(href="/") Home &nbsp;
-    a(href="/ongoing") ongoing stories &nbsp;
-    a(href="/create-new-story") create-new-story&nbsp;
-    a(href="/login") Signup/Login&nbsp;
-
+        p hi #{session}
+        a(href="/") Home &nbsp;
+        a(href="/ongoing") ongoing stories &nbsp;
+        a(href="/create-new-story") create-new-story&nbsp;
+        a(href="/profile") Profile&nbsp;
+        a(href="/login") Signup/Login&nbsp;
+        form(method='POST' action='/signout')
+            input(type='submit', value = 'signout')
     block content
         h3 Completed Stories show up here. &nbsp;
         ol

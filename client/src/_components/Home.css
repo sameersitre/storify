@@ -33,6 +33,12 @@
       border: 10px;
   
     }
+    .collab{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+     color: #988907c4;
+     font-size: 25px;
+    }
   
   
     .info{

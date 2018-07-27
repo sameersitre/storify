@@ -46,10 +46,12 @@ class CreateStory extends Component {
     }
     promptClick = () => {
         //let value = false;
+        const firstPrompt=prompt[Math.floor(Math.random()*prompt.length)]
         console.log('$$$$$$$$$$$$$$$$$$$$$$$$$$$$')
         this.setState({
             promptNotClicked: !this.state.promptNotClicked,
-            getPrompt: !this.state.getPrompt
+            getPrompt: !this.state.getPrompt,
+            storyLine:firstPrompt
 
         })
     }

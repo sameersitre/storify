@@ -23,7 +23,9 @@ class ViewStory extends Component {
                 <div style={{height:'100px', backgroundColor:'#b5b5b5'}}></div>
 
                 <Card  style={this.cardStyle}> this is a story page</Card>
-
+            <div>
+                {this.props.productIndex}
+            </div>
 
             </Grid>
         );

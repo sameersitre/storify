@@ -30,6 +30,7 @@ class StoryCard extends Component {
         margin: '20px',
         borderRadius: '5px',
         backgroundColor: 'white',
+        cursor:'pointer',
     }
 
     mouseover = (e) => {
@@ -42,7 +43,7 @@ class StoryCard extends Component {
         if (this.state.productIndex !== '') {
 
 
-            return <Redirect to='/ViewStory' />
+            return <Redirect to='/ViewStory'  />
         }
         return (
             <div style={this.cardStyle}

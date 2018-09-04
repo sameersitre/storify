@@ -15,7 +15,7 @@
     .hor-slide-container > div:hover {
       transform: scale(1.005);
       transition: 0.1s;
-      box-shadow: #ff1515a1 -2px 3px 32px 3px;
+      box-shadow: #1fce99a1 -2px 3px 32px 3px;
   }
     .card{
         height: 200px;
